@@ -8,15 +8,15 @@ public class Main {
 		
 		c1.setNeighbour(Direction.East, c2);
 
-		Product pizza = new Product("Pizza");
+		Product pizza = new Product("Pizza", 5);
 		c1.setProduct(pizza, 0);
 		c1.getProduct(0);
 		
-		Product apple = new Product("Apfel");
+		Product apple = new Product("Apfel", 2);
 		c1.setProduct(apple, 3);
 		c1.getProduct(3);
 
-		Trolley t1 = new Trolley(c1);
+		Trolley t1 = new Trolley(c1, 10);
 		t1.pickup(apple, 0);
 		t1.pickup(pizza, 1);
 		

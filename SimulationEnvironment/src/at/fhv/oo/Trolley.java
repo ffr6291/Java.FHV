@@ -4,8 +4,10 @@ public class Trolley {
 	boolean _isfull;
 	Cell _cell;
 	private String[] _space;
+	private int _maxload;
 
-	public Trolley(Cell location) {
+	public Trolley(Cell location, int maxload) {
+		_maxload =maxload;
 		_space = new String[2];
 		_cell = location;
 	}
@@ -13,7 +15,6 @@ public class Trolley {
 	public void pickup(Product product, int ware) {
 		_space[ware] = product.name();
 
-	
 	}
 	public void offload(Trolley trolley) {
 		for(int i = 0; i<trolley._space.length; i++) {
