@@ -30,10 +30,10 @@ public class Player {
 
 	}
 
-	public void joinGame(Cell startingCell, Player player) {
+	public void joinGame(Cell startingCell) {
 		_myPosition = startingCell;
-		playerList.add(player);
-		startingCell.setPlayer(player);
+		playerList.add(this);
+		startingCell.setPlayer(this);
 		System.out.println(_name + " joined the game. He/She starts here: \n\n" + getMyPosition().getCellInfo());
 	}
 

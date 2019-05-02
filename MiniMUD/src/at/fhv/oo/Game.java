@@ -52,10 +52,10 @@ public class Game {
         Player Mario = new Player("Mario");
         Player Nico = new Player("Nico");
 
-        Despot.joinGame(startingCell, Despot);
-        Fabian.joinGame(startingCell, Fabian);
-        Mario.joinGame(startingCell, Mario);
-        Nico.joinGame(startingCell, Nico);
+        Despot.joinGame(startingCell);
+        Fabian.joinGame(startingCell);
+        Mario.joinGame(startingCell);
+        Nico.joinGame(startingCell);
         
         startingCell.getInfoPlayersOnField();
         Despot.enter(Direction.EAST);
